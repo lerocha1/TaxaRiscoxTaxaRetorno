@@ -63,7 +63,7 @@ fig.xlabel('Período')
 fig.ylabel('Valor (R$)')
 fig.title('Ativos Bovespa - 2016 - 2022', fontsize=16)
 fig.grid()
-fig.show()
+
 
 
 n=len(all)
@@ -73,3 +73,6 @@ mi=ri.mean().values*252
 sigma = ri.cov()*252
 print('***********************Matriz de covariancia da carteira*************************')
 print(sigma)
+
+
+fig.show()
